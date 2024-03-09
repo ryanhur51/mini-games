@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.text {
+    color: blue;
+    position: absolute;
+    left: 50%;
+}
+.gameButton{
+    padding-top: 20px;  padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
+    border-radius: 10px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: box-shadow 0.15s, opacity 0.15s;
+}
+.gameButton:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.gameButton:active{
+    opacity: 0.8;
+}
