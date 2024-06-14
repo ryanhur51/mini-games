@@ -3,18 +3,28 @@
     margin: 0px;
 }
 
+
 .title {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
     font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 20px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 .text{
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
+    padding-left: 20px;
+    color:rgb(6, 29, 14);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: fade-in 2s;
+    transition: color 0.5s;
+}
+.text:hover{
+    color: rgb(16, 74, 36);
 }
 
 
@@ -32,6 +42,18 @@
     opacity: 0.8;
 }
 
+#waterImage{
+    margin: 40px auto;
+    height: 500px;
+    width: 1000px; 
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.intro{
+    animation: backgroundSwitch 1s;
+    animation: fade-up 1s;
+}
 @keyframes fade-up {
     0% {
         opacity: 0;
@@ -43,7 +65,23 @@
     }
 }
 
-.intro{
-    animation: backgroundSwitch 1s;
-    animation: fade-up 1s;
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transdorm: translateY(0px) scale(1);
+    }
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

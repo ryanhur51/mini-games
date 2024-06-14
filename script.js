@@ -1,13 +1,19 @@
-document.getElementById('switch').addEventListener('click', function() {
-    window.location.href = 'pollution.html';
-});
+var counter = 0;
+const waterBottles = 60000000/24/60/60 //60 million water bottles get thrown a day in the U.S.
+const tonsOfTrash = 292400000/(365.25*24*60*60)
 
 function updateClock() {
     var now = new Date();
-    var seconds = 0;
-    seconds = now.getSeconds(); 
-    var secondsString = (seconds < 10) ? '0' + seconds : seconds;
-    document.getElementById('clock').textContent = secondsString;
+    counter = counter + 0.1;
+
+    var waterString = Math.round(counter * waterBottles) + " water bottles have been thrown away in the United States alone."
+    document.getElementById('waterBottle').textContent = waterString
+    var trashString = Math.round(counter * tonsOfTrash) + " tons of trash have been thrown away in the United States alone."
+    document.getElementById('trash').textContent = trashString
 }
 updateClock();
-setInterval(updateClock, 1000);
+setInterval(updateClock, 100);
+
+function youtubeTracker(){
+
+}
