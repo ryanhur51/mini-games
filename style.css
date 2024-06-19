@@ -3,7 +3,6 @@
     margin: 0px;
 }
 
-
 .title {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
@@ -13,6 +12,7 @@
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 .text{
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
@@ -23,10 +23,10 @@
     animation: fade-in 2s;
     transition: color 0.5s;
 }
+
 .text:hover{
     color: rgb(16, 74, 36);
 }
-
 
 .gameButton{
     padding-top: 20px;  padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
@@ -38,19 +38,13 @@
     height: 200px;
     font-size: 30px;
 }
+
 .gameButton:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 .gameButton:active{
     opacity: 0.8;
-}
-
-#waterImage{
-    margin: 40px auto;
-    height: 500px;
-    width: 1000px; 
-    border: 2px solid black;
-    border-radius: 30px;
 }
 
 .intro{
