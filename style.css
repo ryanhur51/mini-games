@@ -18,6 +18,8 @@
     font-size: 30px;
     font-weight: 700;
     padding-left: 20px;
+    padding-bottom: 20px; 
+    padding-top: 20px; 
     color:rgb(6, 29, 14);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     animation: fade-in 2s;
